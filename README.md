@@ -7,16 +7,24 @@ I implemented a sandpile model that saves its states as BMP images. The program 
 ![Example of concluding state of sandpile with input (0 0 100000) (x_coord  y_coord  count_of_grains)](https://raw.githubusercontent.com/polinatukallo/SandpileModel/refs/heads/main/example_of_states/concluding_state2.bmp)
 
 Example of concluding state of sandpile with input (0 0 100000) (x_coord  y_coord  count_of_grains)
+
 Other examples you can see in folder "example_of_states"!
 
-## Implementation  
+##  Command Line Options
 
-I developed a C++ console application that accepts the following command-line arguments:  
+| Short Form | Long Form          | Arguments       | Description | Example |
+|------------|--------------------|-----------------|-------------|---------|
+| `-i`       | `--input`          | `filename.tsv`  | Input TSV file containing initial sandpile state (columns: x, y, grains) | `-i initial.tsv` |
+| `-o`       | `--output`         | `path/`         | Output directory to save BMP images | `-o results/` |
+| `-m`       | `--max-iter`       | `N`             | Maximum number of iterations to simulate | `-m 1000` |
+| `-f`       | `--freq`           | `N`             | Save image every N iterations (0 saves only final state) | `-f 50` |
+| `-cz`      | `--color_zero`     | `R G B A`       | RGBA color for cells with 0 grains (default: white) | `-cz 255 255 255 0` |
+| `-co`      | `--color_one`      | `R G B A`       | RGBA color for cells with 1 grain (default: green) | `-co 0 255 0 255` |
+| `-ct`      | `--color_two`      | `R G B A`       | RGBA color for cells with 2 grains (default: purple) | `-ct 128 0 128 255` |
+| `-cth`     | `--color_three`    | `R G B A`       | RGBA color for cells with 3 grains (default: yellow) | `-cth 255 255 0 255` |
+| `-coth`    | `--color_over_three` | `R G B A`     | RGBA color for cells with 4+ grains (default: black) | `-coth 0 0 0 255` |
+| `-rand`    | `--color_random`   | (none)          | Use randomly generated colors for all states | `-rand` |
 
-- `-i, --input` – TSV file containing initial data (coordinates and grain count)  
-- `-o, --output` – Directory path for saving BMP images  
-- `-m, --max-iter` – Maximum number of iterations  
-- `-f, --freq` – Image-saving frequency (0 = only the final state)  
 
 ### Input Format  
 
