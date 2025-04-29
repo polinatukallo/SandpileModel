@@ -59,4 +59,4 @@ Pixels are encoded in 4 bits to optimize memory usage.
 
 The program stops when either:  
 - A stable state is reached, or  
-- The maximum iteration count (`--max-iter`) is met.  
+- The maximum iteration count (`--max-iter`) is achieved.  
