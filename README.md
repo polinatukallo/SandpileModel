@@ -7,6 +7,7 @@ I implemented a sandpile model that saves its states as BMP images. The program 
 ![Example of concluding state of sandpile with input (0 0 100000) (x_coord  y_coord  count_of_grains)](https://raw.githubusercontent.com/polinatukallo/SandpileModel/refs/heads/main/example_of_states/concluding_state2.bmp)
 
 Example of concluding state of sandpile with input (0 0 100000) (x_coord  y_coord  count_of_grains)
+Other examples you can see in folder "example_of_states"!
 
 ## Implementation  
 
