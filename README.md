@@ -2,7 +2,9 @@
 
 ## Objective  
 
-I implemented a simplified sandpile model that saves its states as BMP images. The program processes an initial state from an input file, dynamically adjusts the grid size when needed, and supports saving intermediate states at a specified frequency.  
+I implemented a sandpile model that saves its states as BMP images. The program processes an initial state from an input file, dynamically adjusts the grid size when needed, and supports saving intermediate states at a specified frequency.  
+
+![Example of concluding state of sandpile with input (0 0 100000) (x_coord  y_coord  count_of_grains)](example_of_states/concluding_state1)
 
 ## Implementation  
 
