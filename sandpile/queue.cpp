@@ -24,13 +24,13 @@ Cell LinkedList::Front() const {
 
 // Add new cell to end of list
 void LinkedList::PushBack(const Cell& cell) {
-    Node* new_node = new Node(cell);
+    Node* newNode = new Node(cell);
     if (size_ == 0) {
-        head_ = tail_ = new_node;
+        head_ = tail_ = newNode;
     } else {
-        new_node->prev = tail_;
-        tail_->next = new_node;
-        tail_ = new_node;
+        newNode->prev = tail_;
+        tail_->next = newNode;
+        tail_ = newNode;
     }
     size_++;
 }
@@ -60,8 +60,8 @@ void LinkedList::PopFront() {
         delete head_;
         head_ = tail_ = nullptr;
     } else {
-        Node* new_head = head_->next;
-        new_head->prev = nullptr;
+        Node* newHead = head_->next;
+        newHead->prev = nullptr;
         delete head_;
         head_ = new_head;
     }
@@ -73,7 +73,7 @@ void LinkedList::Print() const {
     Node* current = head_;
     while (current != nullptr) {
         std::cout << "(" << current->value.x << ", " << current->value.y 
-                  << "): " << current->value.sand_count << "\n";
+                  << "): " << current->value.sandCount << "\n";
         current = current->next;
     }
 }
