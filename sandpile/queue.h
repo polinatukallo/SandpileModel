@@ -1,5 +1,5 @@
-#ifndef QUE_H
-#define QUE_H
+#ifndef QUEUE_H
+#define QUEUE_H
 
 #include <cstdint>
 #include <stdexcept>
@@ -8,10 +8,10 @@
 struct Cell {
     int16_t x;            // x-coordinate
     int16_t y;            // y-coordinate
-    uint64_t sand_count;  // number of sand grains
+    uint64_t sandCount;  // number of sand grains
 
     Cell(int16_t x, int16_t y, uint64_t count) 
-        : x(x), y(y), sand_count(count) {}
+        : x(x), y(y), sandCount(count) {}
 };
 
 // Node for doubly-linked list implementation
@@ -48,4 +48,4 @@ private:
     size_t size_;   // Current number of nodes
 };
 
-#endif // QUE_H
+#endif // QUEUE_H
